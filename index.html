@@ -21,6 +21,7 @@
     .hidden{display:none!important}
     .eyebrow{font:8px/1.8 'Press Start 2P',monospace;color:#a31e39;letter-spacing:.4px}
     .photo-reveal{animation:appear .8s ease both;width:100%;display:flex;justify-content:center}
+    .wolf-fallback{width:min(100%,560px);aspect-ratio:16/9;border-radius:16px;border:3px solid #fff;outline:2px solid #c92342;background:radial-gradient(circle,#173b64,#071426);display:grid;place-items:center;font-size:clamp(60px,14vw,110px);box-shadow:0 12px 30px #07142655}
     .wolf-photo{width:min(100%,560px);aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:3px solid #fff;outline:2px solid #c92342;box-shadow:0 12px 30px #07142655;filter:saturate(.88)}
     .music{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;background:#fff8fc;border:1px solid #f2b4d5;border-radius:14px;padding:12px 14px;width:min(100%,480px);font-size:13px;font-weight:800;color:#8c263b}
     .music a{color:#a52b75;font-weight:900}
@@ -90,7 +91,7 @@
 <div class="gerberas" aria-hidden="true"><span class="gerbera">🌼</span><span class="gerbera">🌺</span><span class="gerbera">🌼</span><span class="gerbera">🌸</span></div>
 <main class="shell">
   <section class="panel" id="welcome">
-    <img class="wolf-photo" src="lobos.png" alt="Dois lobos brancos sentados lado a lado diante do mar sob a chuva, em uma paisagem sombria de fantasia">
+    <img class="wolf-photo" src="./lobos.webp" alt="Dois lobos brancos sentados lado a lado diante do mar sob a chuva, em uma paisagem sombria de fantasia">
     <div class="eyebrow">UM CONVITE FEITO COM CARINHO</div>
     <span class="badge">♡ PARA A VICTORIA ♡</span>
     <h1>Minha lobinha…</h1>
@@ -99,16 +100,16 @@
     <div class="btnrow"><button id="yes">ACEITO ESSE CONVITE 💗</button><button class="alt" id="no">Hmmm…</button></div>
     <div class="hint" id="hint" aria-live="polite"></div>
     <div class="music" style="display:block;text-align:left">
-      <div style="font-size:16px;margin-bottom:10px">🎵 Nossa playlist ♡</div>
-      <div class="track-row"><button class="music-toggle" id="trackPupila" type="button">▶</button><span><strong>Pupila</strong><br><small>ANAVITÓRIA &amp; Vitor Kley · arquivo local</small></span><span id="trackStatus" class="track-status">Pronta</span></div>
-      <div class="track-row"><a class="music-link" href="https://www.youtube.com/results?search_query=A+Thousand+Years+Christina+Perri+official" target="_blank" rel="noopener">▶</a><span><strong>A Thousand Years</strong><br><small>Christina Perri · abrir no YouTube</small></span><span class="track-status">Online</span></div>
+      <div style="font-size:16px;margin-bottom:10px">🎵 Uma playlist que eu fiz pensando em você, minha lobinha ♡</div>
+      <div class="track-row"><button class="music-toggle" id="trackPupila" type="button">▶</button><span><strong>Pupila</strong><br><small>ANAVITÓRIA &amp; Vitor Kley · escolhi porque me lembra você ❤️</small></span><span id="trackStatus" class="track-status">Pronta</span></div>
+      <div class="track-row"><a class="music-link" href="https://www.youtube.com/results?search_query=A+Thousand+Years+Christina+Perri+official" target="_blank" rel="noopener">▶</a><span><strong>A Thousand Years</strong><br><small>Christina Perri · outra que eu dedicaria a você ❤️</small></span><span class="track-status">Online</span></div>
       <audio id="audioPlayer" controls preload="metadata" playsinline></audio>
-    </div><div class="music-note">Pupila toca diretamente do site. A outra música abre no YouTube porque o arquivo dela não foi enviado. O áudio começa após um toque, já que celulares bloqueiam reprodução automática.</div>
+    </div><div class="music-note">Fiz essa playlist pensando em você. ❤️ Pupila toca aqui no site; a outra música abre no YouTube. Toque em ▶ para tocar e use o controle para pausar quando quiser. Celulares normalmente precisam de um toque para liberar a música.</div>
     <div class="paw">🐾 ✦ 🐾</div>
   </section>
 
   <section class="panel hidden" id="yay">
-    <img class="wolf-photo" src="lobos.png" alt="Dois lobos brancos lado a lado na chuva">
+    <img class="wolf-photo" src="./lobos.webp" alt="Dois lobos brancos lado a lado na chuva">
     <div class="moon" aria-hidden="true">🌕</div>
     <div class="eyebrow">CONVITE ACEITO COM SUCESSO</div>
     <h1>Victoria, você aceitou! 💗</h1>
@@ -152,19 +153,19 @@
 
   <section class="panel hidden" id="letter">
     <div class="eyebrow">UMA SURPRESA SÓ SUA</div>
-    <div class="final-wolf-wrap"><img class="final-wolf" src="lobos.png" alt="Um lobo branco aparece de surpresa, olhando com carinho"></div>
+    <div class="final-wolf-wrap"><img class="final-wolf" src="./lobos.webp" alt="Um lobo branco aparece de surpresa, olhando com carinho"></div>
     <div class="aura">+999999 AURA ✨</div>
     <div class="moon" aria-hidden="true">🌹</div>
     <h1>Pra você, minha lobinha ♡</h1>
     <div class="letter">Victoria, minha lobinha… ❤️
 
-Eu queria te fazer esse convite de um jeito diferente, porque você merece algo especial.
+Eu fiz esse convite de um jeito diferente porque você merece algo especial. E sim, cada detalhe foi pensado por mim, com você na cabeça. ❤️
 
-Quero te conhecer cada vez mais, conversar sobre qualquer coisa, rir das besteiras e criar lembranças que façam a gente sorrir depois. Não precisa ser nada grandioso: às vezes, um momento simples com a pessoa certa já vira uma memória bonita.
+Quero estar pertinho de você, conversar sobre qualquer coisa, rir das nossas besteiras e criar lembranças que façam a gente sorrir depois. Quero ser alguém que te faça bem, que te escute e que te lembre o quanto você é especial pra mim. Não precisa ser nada grandioso: qualquer momento fica melhor quando é com você.
 
-Então aqui vai minha pergunta, sem enrolação: quero passar um tempo com você e ver onde essa história pode chegar. Espero que você tenha gostado da surpresa. 🌷
+Então aqui vai minha pergunta, sem enrolação: quero passar um tempo com você, te fazer sorrir e construir momentos nossos. Você é minha pessoa favorita para dedicar uma playlist brega e preparar uma surpresa dessas. Espero que você tenha gostado, meu amor. 🌷
 
-<div class="signature">Com carinho, pra minha lobinha ♡</div></div>
+<div class="signature">Com todo meu carinho, do seu menino ♡</div></div>
     <p id="summary"></p>
     <div class="wolf-duo" aria-label="Dois lobos fazendo o meme 67"><span class="wolf-mascot">🐺</span><span class="sixseven">6 7</span><span class="wolf-mascot">🐺</span></div>
     <p>Os dois lobos entraram no modo lendário. 🐺🐺</p>
@@ -174,6 +175,7 @@ Então aqui vai minha pergunta, sem enrolação: quero passar um tempo com você
   </section>
 </main>
 <script>
+  document.querySelectorAll('img.wolf-photo, img.final-wolf').forEach(img=>{img.addEventListener('error',()=>{img.style.display='none'; const fallback=document.createElement('div'); fallback.className='wolf-fallback'; fallback.textContent='🐺  ♡  🐺'; fallback.setAttribute('role','img'); fallback.setAttribute('aria-label','Dois lobos juntos'); img.insertAdjacentElement('afterend',fallback);},{once:true});});
   const ids=['welcome','yay','date','plan','letter'];
   function show(id){ids.forEach(x=>document.getElementById(x).classList.toggle('hidden',x!==id));window.scrollTo({top:0,behavior:'smooth'});}
   let noCount=0;
@@ -251,4 +253,4 @@ Então aqui vai minha pergunta, sem enrolação: quero passar um tempo com você
   });
 </script>
 </body>
-</html> 
+</html>
